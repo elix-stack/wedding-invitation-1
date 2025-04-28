@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wedding Invitation 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- simply countdown -->
+    <link rel="stylesheet" href="countdown/circle.css" />
+    <script src="countdown/simplyCountdown.umd.js"></script>
+  </head>
+  <body>
+    <!-- bagian hero -->
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+      <main>
+        <h4>Kepada Yth.<span>Bapak/Ibu/Saudara/i, </span></h4>
+        <h1>Rama & Sinta</h1>
+        <p>Akan melangsungkan resepsi pernikan dalam:</p>
+        <!-- nanti ada countdown disini -->
+        <div id="countdown" class="countdown simply-countdown-circle mt-4 mb-4"></div>
+        <a href="#home" class="btn mt-4" btn-lg onClick="enableScroll()">Lihat Undangan</a>
+      </main>
+    </section>
+
+    <!-- bagian navbar -->
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Rama & Sinta</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Rama & Sinta</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#info">Info</a>
+                <a class="nav-link" href="#story">Story</a>
+                <a class="nav-link" href="#gallery">Gallery</a>
+                <a class="nav-link" href="#rsvp">RSVP</a>
+                <a class="nav-link" href="#gifts">Gifts</a>
+              </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- bagian home -->
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>Diselenggarakan pada 22 Mei 2025 di Sidoarjo</h3>
+            <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu/Saudara/i, untuk hadir pada acara pernikahan kami.</p>
+          </div>
+
+          <div class="row couple">
+            <!-- pengantin Pria -->
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-8 text-end">
+                  <h3>Rama</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nulla aliquam, quod nihil quo enim.</p>
+                  <p>Putra dari Bpk. Lorem <br> dan <br> Ibu Ipsum</p>
+                </div>
+                <div class="col-4">
+                  <img src="img/pengantinPria.png" alt="pengantinPria" class="img-responsive rounded-circle">
+                </div>
+              </div>
+            </div>
+            <span class="heart"><i class="bi bi-heart-fill"></i></span>
+            <!-- pengantin Wanita -->
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-4">
+                  <img src="img/pengantinWanita.png" alt="pengantinWanita" class="img-responsive rounded-circle">
+                </div>
+                <div class="col-8">
+                  <h3>Sinta</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nulla aliquam, quod nihil quo enim.</p>
+                  <p>Putri dari Bpk. Ipsum <br> dan <br> Ibu Lorem</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bagian info -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">Alamat: <br>Hotel Luminor Sidoarjo <br>Jl. Pahlawan, Jetis, Lemahputro, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61213</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63298.38279387083!2d112.66196664644774!3d-7.448770886511811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x2dd7e147d8609f2d%3A0xe5726fef581eeadd!2sJl.%20Pahlawan%2C%20Jetis%2C%20Lemahputro%2C%20Kec.%20Sidoarjo%2C%20Kabupaten%20Sidoarjo%2C%20Jawa%20Timur%2061213!3m2!1d-7.448857899999999!2d112.70316679999999!5e0!3m2!1sid!2sid!4v1745850010354!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a href="https://maps.app.goo.gl/g6QE5ETnyinw2FvK8" target="_blank" class="btn btn-light btn-sm my-4">Klik untuk membuka peta</a>
+            <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">
+                Akad Nikah
+              </div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>08.00 - 10.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Minggu, 22 Mei 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara akad diharapkan kondusif untuk menjaga kekhidmatan dan kekhusyukan seluruh prosesi.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">
+                Resepsi
+              </div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>10.00 - Selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Minggu, 22 Mei 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Merupakan kehormatan dan kebahagiaan bagi kami apabila Anda berkenan hadir dan memberikan doa restu.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bagian story -->
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Bagaimana Cinta Kami Bersemi</span>
+            <h2>Cerita Kami</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi officia deserunt nam, adipisci porro doloremque.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image" style="background-image: url(img/prewed2.jpeg);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertama Bertemu</h3>
+                    <span>14 September 2020</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus sint rerum adipisci, obcaecati aperiam!</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-inverted">
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/id/1/300/300);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai Serius</h3>
+                    <span>11 November 2020</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus sint rerum adipisci, obcaecati aperiam!</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/id/1/301/301);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Tunangan</h3>
+                    <span>22 Mei 2023</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus sint rerum adipisci, obcaecati aperiam!</p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- bagian gallery -->
+     <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Memori Perjalanan Kami</span>
+            <h2>Galeri Foto</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, hic.</p>
+          </div>
+
+          <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+            <div class="col mt-3">
+              <a href="img/gallery/galleryMain1.jpeg" data-toggle="lightbox" data-caption="Rama & Sinta 1" data-galery="mygallery">
+                <img src="https://picsum.photos/id/200/1200/768" alt="Rama & Sinta 1" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+
+            <div class="col mt-3">
+              <a href="img/gallery/tumbnail/galleryMain2.jpeg" data-toggle="lightbox" data-caption="Rama & Sinta 2" data-galery="mygallery">
+                <img src="https://picsum.photos/id/5/1200/768" alt="Rama & Sinta 2" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            
+            <div class="col mt-3">
+              <a href="img/gallery/tumbnail/gallery1.jpeg" data-toggle="lightbox" data-caption="Rama & Sinta 3" data-galery="mygallery">
+                <img src="https://picsum.photos/id/500/1200/768" alt="Rama & Sinta 3" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            
+            <div class="col mt-3">
+              <a href="img/gallery/tumbnail/gallery2.jpeg" data-toggle="lightbox" data-caption="Rama & Sinta 4" data-galery="mygallery">
+                <img src="https://picsum.photos/id/900/1200/768" alt="Rama & Sinta 4" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            
+            <div class="col mt-3">
+              <a href="img/gallery/tumbnail/gallery3.jpeg" data-toggle="lightbox" data-caption="Rama & Sinta 5" data-galery="mygallery">
+                <img src="https://picsum.photos/id/700/1200/768" alt="Rama & Sinta 5" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            
+            <div class="col mt-3">
+              <a href="img/gallery/tumbnail/gallery4.jpeg" data-toggle="lightbox" data-caption="Rama & Sinta 6" data-galery="mygallery">
+                <img src="https://picsum.photos/id/375/1200/768" alt="Rama & Sinta 6" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+            
+            <div class="col mt-3">
+              <a href="img/gallery/tumbnail/galleryMain2.jpeg" data-toggle="lightbox" data-caption="Rama & Sinta 7" data-galery="mygallery">
+                <img src="https://picsum.photos/id/260/1200/768" alt="Rama & Sinta 7" class="img-fluid w-100 rounded">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+     </section>
+
+    <!-- rsvp -->
+     <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+          </div>
+
+          <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" 
+          action="https://script.google.com/macros/s/AKfycbzonA-VRMB8dyMizhVNdsWeHFaeTUrcex8kHIL4iKZfs0Kuymo-rhFMn3ORmPjxIFOQ/exec" id="my-form">
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" name="nama">
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="jumlah" class="form-label">Jumlah keluarga hadir</label>
+                <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="status" class="form-label">Konfirmasi</label>
+                <select name="status" id="status" class="form-select">
+                  <option selected>Pilih salah satu</option>
+                  <option value="Hadir">Hadir</option>
+                  <option value="Tidak Hadir">Tidak Hadir</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-12" style="margin-top: 30px">
+              <button class="btn btn-primary">Kirim</button>
+            </div>
+          </form>
+
+          <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+              <!-- code bagian coment tamu undangan menggunakan disqus -->
+              <div id="disqus_thread"></div>
+              <script>
+                  /**
+                  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                  /*
+                  var disqus_config = function () {
+                  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                  };
+                  */
+                  (function() { // DON'T EDIT BELOW THIS LINE
+                  var d = document, s = d.createElement('script');
+                  s.src = 'https://mywedding1-1.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+                  })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div>
+          </div>
+
+        </div>
+     </section>
+
+     <!-- gifts -->
+     <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>ungkapan tanda kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, eum.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+               <div class="fw-bold">BCA</div>  
+                1234567 - Rama
+              </li>
+              <li class="list-group-item">
+               <div class="fw-bold">Saweria</div>  
+                <img src="" alt="" class="" width="">
+              </li>
+            </ul>
+          </div>
+        </div>
+     </section>
+
+     <!-- footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <small class="block">&copy;2025 Dino Wedding. All Rights Reserved.</small>
+              <small class="block">Design by: <a href="https://instagram.com/">@Dino</a></small>
+              
+              <ul class="mt-3">
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+              </ul>
+            
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- audio -->
+       <div id="audio-container">
+        <audio id="backSong" autoplay loop>
+          <source src="audio/cintaVina.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="audio-icon-wrapper" style="display: none;">
+          <i class="bi bi-disc"></i>
+        </div>
+       </div>
+
+<!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        simplyCountdown('#countdown', {
+          year: 2025,
+          month: 5,
+          day: 22,
+          hours: 8, // Target hour [0-23], default: 0
+          minutes: 0, // Target minute [0-59], default: 0
+          seconds: 0, // Target second [0-59], default: 0
+          words: {
+            // Custom labels, with lambda for plurals
+            days: { root: 'day', lambda: (root, n) => (n > 1 ? root + 's' : root) },
+            hours: { root: 'hour', lambda: (root, n) => (n > 1 ? root + 's' : root) },
+            minutes: { root: 'minute', lambda: (root, n) => (n > 1 ? root + 's' : root) },
+            seconds: { root: 'second', lambda: (root, n) => (n > 1 ? root + 's' : root) },
+          },
+          plural: true, // Use plurals for labels
+          inline: false, // Inline format: e.g., "24 days, 4 hours, 2 minutes"
+          inlineSeparator: ', ', // Separator for inline format, default: ", "
+          inlineClass: 'simply-countdown-inline', // CSS class for inline countdown
+          enableUtc: false, // Use UTC time if true
+          refresh: 1000, // Refresh interval in ms, default: 1000
+          sectionClass: 'simply-section', // CSS class for each countdown section
+          amountClass: 'simply-amount', // CSS class for numeric values
+          wordClass: 'simply-word', // CSS class for unit labels
+          zeroPad: false, // Pad numbers with leading zero
+          removeZeroUnits: false, // Remove units with zero value
+          countUp: false, // Count up after reaching zero
+          onEnd: () => {}, // Callback when countdown ends
+          onStop: () => {}, // Callback when countdown is stopped
+          onResume: () => {}, // Callback when countdown is resumed
+          onUpdate: (params) => {}, // Callback when countdown is updated
+        });
+      });
+    </script>
+    <!-- solve hasil dari penanganan overflow -->
+    <script>
+      const stickyTop = document.querySelector('.sticky-top');
+      const offcanvas = document.querySelector('.offcanvas');
+
+        offcanvas.addEventListener('show.bs.offcanvas', function() {
+        stickyTop.style.overflow = 'visible';
+        });
+
+        offcanvas.addEventListener('hidden.bs.offcanvas', function() {
+        stickyTop.style.overflow = 'hidden';
+        });
+    </script>
+
+    <!-- disable scroll -->
+    <script>
+      const rootElement = document.querySelector(':root');
+      const audioIconWrapper = document.querySelector('.audio-icon-wrapper')
+      const audioIcon = document.querySelector('.audio-icon-wrapper i')
+      const backSong = document.querySelector('#backSong');
+      let isPlaying = false;
+
+      function disableScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function() {
+          window.scrollTo(scrollTop, scrollLeft);
+        }
+
+        rootElement.style.scrollBehavior = 'auto';
+      }
+
+      function enableScroll() {
+        window.onscroll = function() { }
+        rootElement.style.scrollBehavior = 'smooth';
+        //localStorage.setItem('opened', 'true');
+        playAudio()
+      }
+
+      //menggabungkan fungsi play audio dengan lihat undangan
+      function playAudio() {
+        backSong.volume = 0.5;
+        backSong.play();
+        audioIconWrapper.style.display = 'flex'
+        isPlaying = true;
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          backSong.pause ();
+          audioIcon.classList.remove('bi-disc');
+          audioIcon.classList.add('bi-pause-circle');
+        } else {
+          backSong.play ();
+          audioIcon.classList.add('bi-disc');
+          audioIcon.classList.remove('bi-pause-circle');
+        }
+
+        isPlaying = !isPlaying;
+      }
+      // if(!localStorage.getItem('opened')){
+      //   disableScroll();
+      // }
+      disableScroll();
+    </script>
+
+    <!-- js penanganan pengembalian hasil form -->
+     <script>
+      window.addEventListener("load", function() {
+      const form = document.getElementById('my-form');
+      form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const action = e.target.action;
+      fetch(action, {
+      method: 'POST',
+      body: data,
+      })
+      .then(() => {
+      alert("Konfirmasi kehadiran, Success!");
+      })
+      });
+      });
+
+     </script>
+
+     <!-- js menamai undangan sesuai nama tamu -->
+     <script>
+      const urlParams = new URLSearchParams(window.location.search); //pengambilan parameter dari url yang bernilai nama tamu
+      const nama = urlParams.get('n') || '';
+      const pronoun = urlParams.get('p') || '';
+
+      // pemanggilan element yang akan diisi nama dari url
+      const namaContainer = document.querySelector('.hero h4 span');
+      namaContainer.innerText = `${pronoun} ${nama},`;
+
+      document.querySelector('#nama').value = nama;
+     </script>
+  </body>
+</html>

@@ -1,0 +1,490 @@
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgba(0 0 0 / 0.5);
+  --transparant: rgba(0, 0, 0, 0.319);
+}
+body {
+  font-size: 1.2rem;
+  font-family: 'Work Sans', sans-serif;
+  min-height: 4000px;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/prewed1.jpg);
+  background-size: cover; /* Membuat gambar menutupi area hero */
+  background-repeat: no-repeat; /* Mencegah gambar berulang */
+  background-position: center; /* Memusatkan gambar */
+  z-index: -1;
+  filter: grayscale();
+}
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--transparant);
+}
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+}
+.hero h1 {
+  font-family: 'Sacramento', cursive;
+  font-weight: 6rem;
+  font-size: 6rem;
+  margin-top: 30px;
+}
+.hero h4 {
+  font-size: 1.6rem;
+}
+.hero p {
+  font-size: 1.4rem;
+}
+.hero a {
+  color: var(--pink);
+  background-color: aliceblue;
+  box-shadow: var(--shadow);
+}
+.hero a:hover {
+  background-color: var(--pink);
+  color: aliceblue;
+}
+
+/* .mynavbar */
+.mynavbar {
+  background-color: rgba(225, 225, 225, 0.4) !important;
+  backdrop-filter: blur(4px);
+}
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: 'Sacramento', cursive;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.mynavbar .nav-link {
+  text-transform: uppercase;
+}
+.sticky-top {
+  overflow: hidden;
+}
+.home {
+  background-image: url(img/floraPattern1.png);
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -6rem;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
+
+.home h2,
+.info h2,
+.story h2,
+.gallery h2,
+.rsvp h2,
+.gifts h2 {
+  color: var(--pink);
+  font-family: 'Sacramento';
+  font-size: 5rem;
+  font-weight: bold;
+}
+.home h2 {
+  margin-top: -6rem;
+}
+.home h3 {
+  color: #444;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.home p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.home .couple {
+  margin-top: 75px;
+}
+.home .couple h3 {
+  font-family: 'Sacramento';
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--pink);
+}
+.home .couple img {
+  width: 100%;
+}
+.home .heart {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+}
+.home .heart i {
+  margin: auto;
+  color: var(--pink);
+}
+
+/* info */
+.info {
+  background-color: var(--bg);
+  color: azure;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.info .alamat {
+  font-size: 1.1rem;
+}
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.info .card {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  border: 1px solid #999;
+}
+.info .card-header {
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.info .card-body {
+  font-size: 1rem;
+}
+.info .card-footer {
+  border-top: 1px solid #999;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+/* story */
+.story,
+.gallery,
+.rsvp,
+.gifts {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.story span,
+.gallery span,
+.gifts span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+.story p,
+.gallery p,
+.rsvp p,
+.gifts p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.timeline {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+.timeline::before {
+  content: '';
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 1px;
+  background-color: #ccc;
+  left: 50%;
+}
+.timeline li {
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.timeline::before,
+.timeline::after {
+  content: '';
+  display: table;
+}
+.timeline::after {
+  clear: both;
+}
+.timeline li .timeline-image {
+  width: 160px;
+  height: 160px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.timeline li .timeline-panel {
+  width: 40%;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  position: relative;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.timeline li .timeline-panel::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent; /* trik membuat panel segitiga */
+  border-left: 15px solid#ccc; /* trik membuat panel segitiga */
+  border-right: 0 solid#ccc; /* trik membuat panel segitiga */
+  border-bottom: 15px solid transparent; /* trik membuat panel segitiga */
+  top: 80px; /* trik membuat panel segitiga */
+  right: -15px; /* trik membuat panel segitiga */
+}
+.timeline li .timeline-panel::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border-top: 14px solid transparent; /* trik membuat panel segitiga */
+  border-left: 14px solid#fff; /* trik membuat panel segitiga */
+  border-right: 0 solid#fff; /* trik membuat panel segitiga */
+  border-bottom: 14px solid transparent; /* trik membuat panel segitiga */
+  top: 81px; /* trik membuat panel segitiga */
+  right: -13px; /* trik membuat panel segitiga */
+}
+.timeline li.timeline-inverted .timeline-panel {
+  float: right; /* memindahkan panel ke kanan */
+}
+.timeline li.timeline-inverted .timeline-panel::before {
+  border-left-width: 0; /* membalikkan posisi segitiga */
+  border-right-width: 15px; /* membalikkan posisi segitiga */
+  left: -15px; /* membalikkan posisi segitiga */
+  right: auto; /* membalikkan posisi segitiga */
+}
+.timeline li.timeline-inverted .timeline-panel::after {
+  border-left-width: 0; /* membalikkan posisi segitiga */
+  border-right-width: 14px; /* membalikkan posisi segitiga */
+  left: -13px; /* membalikkan posisi segitiga */
+  right: auto; /* membalikkan posisi segitiga */
+}
+
+/* gallery */
+.gallery {
+  background-color: #f5f5f538;
+}
+
+/* rsvp */
+.rsvp {
+  background-color: var(--bg);
+}
+.rsvp h2 {
+  font-size: 4.5rem;
+}
+.rsvp p {
+  color: white;
+}
+.rsvp form label {
+  color: white;
+}
+.rsvp button {
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+}
+.rsvp button:hover {
+  background-color: white;
+  color: var(--pink);
+  border: 1px solid white;
+}
+
+/* footer */
+footer {
+  padding: 3rem;
+  background-color: var(--pink);
+  color: white;
+}
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+}
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+/* audio */
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: muter 4s linear infinite; /* bikin muter */
+  transform-origin: center; /* bikin muter ditengah-tengah */
+  display: flex; /* bikin muter ditengah-tengah */
+  justify-content: center; /* bikin muter ditengah-tengah */
+  align-items: center; /* bikin muter ditengah-tengah */
+  line-height: 0; /* bikin muter ditengah-tengah */
+}
+@keyframes muter {
+  form {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* media query */
+/* extra large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+  .timeline li .timeline-image {
+    left: 25px;
+    margin-left: 85px;
+    width: 190px;
+    height: 190px;
+  }
+  .timeline li .timeline-panel {
+    width: 70%;
+    float: right;
+    transform: translateX(-25px);
+  }
+  .timeline li .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+    top: 30px;
+  }
+  .timeline li .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+    top: 31px;
+  }
+}
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .simply-countdown-circle > .simply-section {
+    padding: 70px;
+  }
+  .home .heart {
+    display: none;
+  }
+  .timeline::before {
+    left: 60px;
+  }
+  .timeline li .timeline-image {
+    left: 15px;
+    margin-left: 70px;
+    width: 155px;
+    height: 155px;
+  }
+  .timeline li .timeline-panel {
+    width: 70%;
+    float: right;
+    transform: translateX(-15px);
+  }
+  .timeline li .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+    top: 30px;
+  }
+  .timeline li .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+    top: 31px;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .simply-countdown-circle > .simply-section {
+    padding: 30px;
+    margin: 4px;
+  }
+  .mynavbar .nav-link {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .timeline li .timeline-image {
+    width: 110px;
+    height: 110px;
+    left: 0;
+    top: 15px;
+  }
+  .timeline li .timeline-panel {
+    width: 70%;
+    transform: translateX(-8px);
+  }
+  .timeline li .timeline-panel::before {
+    top: 30px;
+  }
+  .timeline li .timeline-panel::after {
+    top: 31px;
+  }
+}
+
+/* mobile phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+  .simply-countdown-circle > .simply-section {
+    padding: 10px;
+    margin: 2px;
+  }
+  .timeline li .timeline-image {
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: 16px;
+  }
+  .timeline li .timeline-panel {
+    width: 65%;
+    transform: translateX(-20px);
+  }
+  .timeline li .timeline-panel::before {
+    top: 30px;
+  }
+  .timeline li .timeline-panel::after {
+    top: 31px;
+  }
+}
