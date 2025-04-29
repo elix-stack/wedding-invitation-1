@@ -500,10 +500,10 @@ footer li {
     margin: 1px;
   }
   .timeline li .timeline-image {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     left: 0;
-    top: 12px;
+    top: 1.5px;
   }
   .timeline li .timeline-panel {
     width: 60%;
@@ -519,6 +519,13 @@ footer li {
 }
 
 @media (max-width: 380px) {
+  .timeline li .timeline-image {
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 12px;
+  }
+
   .timeline li .timeline-panel {
     width: 55%;
     transform: translateX(-15px);
