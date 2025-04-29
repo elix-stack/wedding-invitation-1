@@ -206,7 +206,7 @@ body {
   bottom: 0;
   position: absolute;
   width: 1px;
-  background-color: #ccc;
+  background-color: #a4a2a2;
   left: 50%;
 }
 .timeline li {
@@ -522,6 +522,13 @@ footer li {
   .timeline li .timeline-panel {
     width: 55%;
     transform: translateX(-15px);
-    padding: 1.5%;
+    padding: 0.6%;
+  }
+  .timeline li .timeline-panel .timeline-heading h3,
+  .timeline li .timeline-panel .timeline-heading span {
+    padding: 0.5%;
+  }
+  .timeline li .timeline-panel .timeline-body p {
+    font-size: 80%;
   }
 }
