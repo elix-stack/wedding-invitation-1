@@ -472,14 +472,15 @@ footer li {
     margin: 2px;
   }
   .timeline li .timeline-image {
-    width: 100px;
-    height: 100px;
+    width: 115px;
+    height: 115px;
     left: 0;
-    top: 16px;
+    top: 5px;
   }
   .timeline li .timeline-panel {
-    width: 65%;
+    width: 55%;
     transform: translateX(-20px);
+    padding: 2%;
   }
   .timeline li .timeline-panel::before {
     top: 30px;
@@ -495,18 +496,19 @@ footer li {
     font-size: 55%;
   }
   .simply-countdown-circle > .simply-section {
-    padding: 8px;
+    padding: 6px;
     margin: 1px;
   }
   .timeline li .timeline-image {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     left: 0;
     top: 12px;
   }
   .timeline li .timeline-panel {
-    width: 70%;
+    width: 60%;
     transform: translateX(-15px);
+    padding: 1.5%;
   }
   .timeline li .timeline-panel::before {
     top: 28px;
