@@ -9,6 +9,7 @@ body {
   font-family: 'Work Sans', sans-serif;
   min-height: 4000px;
 }
+
 .hero::before {
   content: '';
   position: absolute;
