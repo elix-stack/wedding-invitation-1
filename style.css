@@ -488,3 +488,30 @@ footer li {
     top: 31px;
   }
 }
+
+/* small mobile phone */
+@media (max-width: 460px) {
+  html {
+    font-size: 55%;
+  }
+  .simply-countdown-circle > .simply-section {
+    padding: 8px;
+    margin: 1px;
+  }
+  .timeline li .timeline-image {
+    width: 90px;
+    height: 90px;
+    left: 0;
+    top: 12px;
+  }
+  .timeline li .timeline-panel {
+    width: 70%;
+    transform: translateX(-15px);
+  }
+  .timeline li .timeline-panel::before {
+    top: 28px;
+  }
+  .timeline li .timeline-panel::after {
+    top: 29px;
+  }
+}
