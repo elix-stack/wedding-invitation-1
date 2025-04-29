@@ -517,3 +517,11 @@ footer li {
     top: 29px;
   }
 }
+
+@media (max-width: 380px) {
+  .timeline li .timeline-panel {
+    width: 55%;
+    transform: translateX(-15px);
+    padding: 1.5%;
+  }
+}
